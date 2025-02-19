@@ -1,9 +1,4 @@
-package com.ngk.learn_spring_framework;
-
-import com.ngk.learn_spring_framework.game.GameRunner;
-import com.ngk.learn_spring_framework.game.MarioGame;
-import com.ngk.learn_spring_framework.game.Pacman;
-import com.ngk.learn_spring_framework.game.SuperContraGame;
+package com.ngk.learn_spring_framework.game;
 
 public class App01GamingBasicJava {
 

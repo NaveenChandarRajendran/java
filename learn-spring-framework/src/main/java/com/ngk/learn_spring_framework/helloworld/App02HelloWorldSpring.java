@@ -1,4 +1,4 @@
-package com.ngk.learn_spring_framework;
+package com.ngk.learn_spring_framework.helloworld;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -14,8 +14,17 @@ public class App02HelloWorldSpring {
 		var context = new AnnotationConfigApplicationContext(HelloWorldConfiguration.class);
 		
 		// Retrieve the bean from the Spring context
-        String message = context.getBean(String.class);
-        System.out.println(message); // Should print "Hello, World!"
+//        String message = context.getBean(String.class);
+//        System.out.println(message);
+		
+		System.out.println(context.getBean("name"));
+        
+        System.out.println(context.getBean("age"));
+        
+        System.out.println(context.getBean("person"));
+        
+        System.out.println(context.getBean("person2MethodCall"));
+
 
         // Close the context to release resources
         context.close();
